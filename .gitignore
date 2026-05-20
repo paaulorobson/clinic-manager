@@ -1,0 +1,15 @@
+node_modules/
+dist/
+
+*.local
+*.log
+*.tsbuildinfo
+
+.DS_Store
+.env
+.env.*
+!.env.example
+
+.git-local/
+.agents/
+.codex/
