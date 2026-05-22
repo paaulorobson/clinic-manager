@@ -84,30 +84,30 @@ function getEventColor(procedure: string) {
   const normalizedProcedure = procedure.toLowerCase();
 
   if (normalizedProcedure.includes('limpeza')) {
-    return 'border-pink-500 bg-pink-100 text-pink-700';
+    return 'border-amber-500 bg-amber-100 text-amber-800';
   }
 
   if (normalizedProcedure.includes('drenagem')) {
-    return 'border-rose-500 bg-rose-100 text-rose-700';
+    return 'border-yellow-500 bg-yellow-100 text-yellow-800';
   }
 
   if (normalizedProcedure.includes('botox') || normalizedProcedure.includes('avalia')) {
-    return 'border-fuchsia-500 bg-fuchsia-100 text-fuchsia-700';
+    return 'border-amber-600 bg-amber-50 text-amber-900';
   }
 
   if (normalizedProcedure.includes('peeling')) {
-    return 'border-pink-400 bg-pink-50 text-pink-800';
+    return 'border-yellow-400 bg-yellow-50 text-yellow-900';
   }
 
   if (normalizedProcedure.includes('micro')) {
-    return 'border-purple-400 bg-purple-100 text-purple-700';
+    return 'border-amber-400 bg-amber-100 text-amber-700';
   }
 
   if (normalizedProcedure.includes('preenchimento')) {
-    return 'border-fuchsia-500 bg-fuchsia-100 text-fuchsia-700';
+    return 'border-yellow-600 bg-yellow-100 text-yellow-900';
   }
 
-  return 'border-rose-500 bg-rose-100 text-rose-700';
+  return 'border-amber-500 bg-amber-100 text-amber-800';
 }
 </script>
 
@@ -128,7 +128,7 @@ function getEventColor(procedure: string) {
 
           <div class="inline-flex w-fit rounded-lg bg-muted p-1 text-sm">
             <button type="button" class="rounded-md px-4 py-1.5 text-muted-foreground">Dia</button>
-            <button type="button" class="rounded-md bg-card px-4 py-1.5 font-semibold text-pink-600 shadow-sm">Semana</button>
+            <button type="button" class="rounded-md bg-card px-4 py-1.5 font-semibold text-amber-700 shadow-sm">Semana</button>
             <button type="button" class="rounded-md px-4 py-1.5 text-muted-foreground">Mês</button>
           </div>
         </div>

@@ -53,7 +53,7 @@ function isActive() {
   <tr class="border-b border-border last:border-b-0">
     <td class="py-4 pr-4">
       <div class="flex min-w-0 items-center gap-3">
-        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-pink-100 text-sm font-semibold text-pink-500">
+        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700">
           {{ getInitials(patient.name) }}
         </div>
         <span class="truncate font-semibold text-foreground">{{ patient.name }}</span>
@@ -63,11 +63,11 @@ function isActive() {
     <td class="px-4 py-4">
       <div class="space-y-1 text-sm text-slate-700">
         <div class="flex items-center gap-2">
-          <Phone class="size-3.5 text-pink-400" />
+          <Phone class="size-3.5 text-amber-500" />
           <span>{{ patient.whatsapp }}</span>
         </div>
         <div class="flex items-center gap-2">
-          <Mail class="size-3.5 text-pink-400" />
+          <Mail class="size-3.5 text-amber-500" />
           <span>{{ patient.email || 'E-mail não informado' }}</span>
         </div>
       </div>
@@ -80,7 +80,7 @@ function isActive() {
     <td class="px-4 py-4">
       <Badge
         variant="secondary"
-        :class="isActive() ? 'bg-pink-100 text-pink-700' : 'bg-slate-100 text-slate-600'"
+        :class="isActive() ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-600'"
       >
         {{ isActive() ? 'ATIVO' : 'INATIVO' }}
       </Badge>

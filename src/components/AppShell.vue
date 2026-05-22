@@ -121,7 +121,7 @@ const currentPageTitle = computed(() => {
             </Button>
 
             <div class="flex items-center gap-3 rounded-md border border-border bg-card px-2 py-1.5">
-              <div class="flex size-9 items-center justify-center rounded-full bg-pink-100 text-sm font-bold text-pink-600">
+              <div class="flex size-9 items-center justify-center rounded-full bg-amber-100 text-sm font-bold text-amber-700">
                 AC
               </div>
               <div class="hidden text-sm sm:block">

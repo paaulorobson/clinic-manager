@@ -97,20 +97,20 @@ function appointmentStatus(appointment: Appointment) {
   if (appointment.date === today) {
     return {
       label: 'CONFIRMADO',
-      className: 'bg-pink-100 text-pink-700',
+      className: 'bg-amber-100 text-amber-800',
     };
   }
 
   return {
     label: 'AGUARDANDO',
-    className: 'bg-amber-100 text-amber-700',
+    className: 'bg-yellow-100 text-yellow-800',
   };
 }
 </script>
 
 <template>
   <section class="mx-auto grid max-w-6xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-3 lg:px-8">
-    <Card class="overflow-hidden border-0 bg-gradient-to-br from-pink-500 to-rose-400 text-white shadow-md">
+    <Card class="overflow-hidden border-0 bg-gradient-to-br from-amber-600 to-yellow-400 text-white shadow-md">
       <CardContent class="relative p-6">
         <Gift class="absolute right-7 top-7 size-9 text-white/25" />
         <h2 class="max-w-52 text-xl font-bold leading-snug">Aniversariantes de Hoje</h2>
@@ -124,7 +124,7 @@ function appointmentStatus(appointment: Appointment) {
           <p v-else class="text-white/85">Nenhum aniversariante hoje.</p>
         </div>
 
-        <Button type="button" variant="secondary" class="mt-5 text-pink-600 hover:text-pink-700">
+        <Button type="button" variant="secondary" class="mt-5 text-amber-800 hover:text-amber-900">
           Enviar Parabéns (WhatsApp)
         </Button>
       </CardContent>
@@ -133,7 +133,7 @@ function appointmentStatus(appointment: Appointment) {
     <Card class="shadow-sm">
       <CardContent class="p-6">
         <div class="flex items-center gap-2">
-          <Clock3 class="size-4 text-blue-500" />
+          <Clock3 class="size-4 text-amber-600" />
           <h2 class="text-lg font-bold">Próximos em 1 Hora</h2>
         </div>
 
@@ -141,7 +141,7 @@ function appointmentStatus(appointment: Appointment) {
           <div
             v-for="appointment in nextHourAppointments"
             :key="appointment.id"
-            class="border-l-4 border-pink-500 pl-3"
+            class="border-l-4 border-amber-500 pl-3"
           >
             <p class="font-bold">{{ appointment.procedure }}</p>
             <p class="text-sm text-muted-foreground">Paciente: {{ appointment.patientName }} • {{ appointment.time }}</p>
@@ -156,9 +156,9 @@ function appointmentStatus(appointment: Appointment) {
         <div>
           <p class="text-sm text-muted-foreground">Agendamentos Hoje</p>
           <p class="mt-1 text-4xl font-bold leading-none">{{ todaysAppointments.length }}</p>
-          <p class="mt-2 text-sm text-pink-600">↑ +15% que ontem</p>
+          <p class="mt-2 text-sm text-amber-700">↑ +15% que ontem</p>
         </div>
-        <div class="flex size-14 items-center justify-center rounded-2xl bg-pink-50 text-pink-500">
+        <div class="flex size-14 items-center justify-center rounded-2xl bg-amber-50 text-amber-600">
           <CalendarCheck class="size-6" />
         </div>
       </CardContent>
